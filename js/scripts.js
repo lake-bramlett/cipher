@@ -6,13 +6,16 @@ $(document).ready(function() {
 var prompt = prompt("Enter a sentence");
 var letters = prompt.charAt(0).toUpperCase() + prompt.charAt(prompt.length-1).toUpperCase();
 var letterArray = Array.from(letters);
-var reverse = letterArray.reverse();
+var reverse = letterArray.reverse().join('');
 
 
 
 console.log('this prompt is: ', prompt);
 console.log('our first and last letters are: ', letters);
 console.log('those letters reversed are: ', reverse);
+
+alert(prompt + reverse);
+
 
 
 
